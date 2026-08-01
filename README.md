@@ -18,7 +18,7 @@ Project cards live in `data.js`. Each card includes its GitHub repository, an op
 
 ## Deployment
 
-The included workflow deploys the repository root to GitHub Pages on every push to `main`. The `CNAME` file is configured for `work.neintruths.com`; point the domain's DNS at GitHub Pages after the repository is published.
+The included workflow deploys the repository root to GitHub Pages on every push to `main`. The current release target is the project Pages URL: <https://irgendjemandkeinkorper.github.io/work-neintruths/>. A custom domain can be added later if the archive earns one.
 
 ## Project management
 

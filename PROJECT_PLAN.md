@@ -15,7 +15,7 @@ The primary audience is a potential collaborator, employer, or curious technical
 - The site works at narrow mobile widths and desktop widths without horizontal scroll.
 - Keyboard users can reach all navigation, filters, and project links with a visible focus state.
 - The page has a meaningful document structure, usable contrast, descriptive metadata, and a successful static deployment.
-- `work.neintruths.com` resolves to the GitHub Pages deployment after DNS is configured.
+- The GitHub Pages project URL resolves to the deployment and is ready to share.
 
 Out of scope for the first release: a CMS, authenticated editing, a contact form, a full case-study page for every project, analytics that require cookies, and an automated GitHub API sync. Those are valuable only after the curated presentation proves useful.
 
@@ -65,7 +65,7 @@ Out of scope for the first release: a CMS, authenticated editing, a contact form
 - WCAG contrast and reduced-motion checks.
 - Metadata for search/social previews and a favicon.
 - Link-check and HTML smoke checks in CI.
-- GitHub Pages workflow, custom domain, and deployment verification.
+- GitHub Pages workflow and deployment verification.
 
 **Exit criteria:** A manual keyboard pass and automated checks pass; the live URL loads from a clean browser session with no console errors or dead primary links.
 
@@ -361,18 +361,18 @@ The issues below are deliberately sized for direct GitHub entry. Routine, boiler
   - [ ] Assets are small and committed to the repository.
   - [ ] No decorative asset is needed for the page to remain understandable.
 
-### Issue 20 — Document DNS and GitHub Pages ownership
+### Issue 20 — Document GitHub Pages deployment ownership
 
-* **Issue Title:** Write the release runbook for work.neintruths.com
+* **Issue Title:** Write the GitHub Pages release runbook
 * **Type:** Documentation
 * **Milestone:** Launch Operations & Iteration
 * **Labels:** P1, documentation, deployment, Delegated-to-Jules
-* **Current State vs. Goal:** `CNAME` and the workflow exist, but domain setup and ownership transfer are not yet documented as a repeatable procedure.
+* **Current State vs. Goal:** The workflow exists, but the project Pages URL and deployment ownership are not yet documented as a repeatable procedure.
 * **Acceptance Criteria:**
-  - [ ] README documents the DNS records required for GitHub Pages.
-  - [ ] README documents the Pages source and custom-domain setting.
+  - [ ] README documents the project Pages URL and Pages source.
+  - [ ] README identifies the repository owner responsible for deployment settings.
   - [ ] A clean-browser verification checklist is included.
-  - [ ] The runbook explains how to remove or change the domain safely.
+  - [ ] The runbook notes that custom-domain setup is intentionally deferred.
 
 ### Issue 21 — Add a lightweight visual regression checkpoint
 
@@ -435,6 +435,6 @@ Recommended sequence:
 
 1. Verify every repository/demo URL and finalize the content contract.
 2. Run the responsive, contrast, and keyboard passes; fix P1 issues before sharing the URL.
-3. Publish the remote repository and Pages workflow, then configure DNS and test the clean live domain.
+3. Share the GitHub Pages project URL; defer custom-domain work until the archive needs it.
 
 The smallest useful next review is a 15-minute pass on the live URL with a keyboard, a 360px viewport, and three representative project links. That will surface most launch-blocking issues before more strategic work is justified.
