@@ -18,6 +18,8 @@ Project cards live in `data.js`. Each card requires `number`, `name`, `type`, `k
 
 To add or retire a project, update `data.js`, confirm the repository and optional demo URLs, check the summary/use-case copy, and verify the All work and category counts at mobile and desktop widths. The first entries carry hand-edited summaries; metadata-based entries keep the long tail discoverable without pretending every repository is a case study.
 
+The archive defaults to a four-column grid on wide screens and can switch to a one-project-per-row list. Search and category filters work together. Select a project card—or focus it and press Enter/Space—to open its detail dialog with the summary, use case, tags, GitHub link, and optional live-build link.
+
 ## Deployment
 
 The included workflow deploys the repository root to GitHub Pages on every push to `main`. The current release target is the project Pages URL: <https://irgendjemandkeinkorper.github.io/work-neintruths/>. A custom domain can be added later if the archive earns one.
