@@ -14,7 +14,9 @@ Open <http://localhost:8080> from this directory.
 
 ## Content model
 
-Project cards live in `data.js`. Each card includes its GitHub repository, an optional public build, a short use case, and lightweight tags. `app.js` renders cards and handles the category filters.
+Project cards live in `data.js`. Each card requires `number`, `name`, `type`, `kind`, `status`, `summary`, `useCase`, `tags`, `accent`, and `repoUrl`. `demoUrl` is optional and should only be present for a confirmed public build. The supported `type` values are `tool`, `game`, and `system`; `app.js` validates and renders the full 53-project archive, search, and category filters.
+
+To add or retire a project, update `data.js`, confirm the repository and optional demo URLs, check the summary/use-case copy, and verify the All work and category counts at mobile and desktop widths. The first entries carry hand-edited summaries; metadata-based entries keep the long tail discoverable without pretending every repository is a case study.
 
 ## Deployment
 

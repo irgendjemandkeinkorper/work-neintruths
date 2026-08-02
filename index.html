@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A working archive of Adam's tools, games, experiments, and systems." />
     <meta name="theme-color" content="#121311" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="work.neintruths — a working archive" />
+    <meta property="og:description" content="A working archive of Adam's tools, games, experiments, and systems." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="work.neintruths — a working archive" />
+    <meta name="twitter:description" content="A working archive of Adam's tools, games, experiments, and systems." />
     <title>work.neintruths — a working archive</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#work">Skip to selected work</a>
     <div class="site-shell">
       <header class="site-header">
         <a class="wordmark" href="#top" aria-label="work.neintruths home">
@@ -48,27 +56,34 @@
         </section>
 
         <section class="signal-strip" aria-label="Archive summary">
-          <div><strong>10</strong><span>projects in the field</span></div>
-          <div><strong>04</strong><span>working modes</span></div>
+          <div><strong>53</strong><span>projects in the field</span></div>
+          <div><strong>03</strong><span>working modes</span></div>
           <div><strong>∞</strong><span>questions still open</span></div>
-          <p>Built in public, mostly<br />for the joy of the constraint.</p>
+          <p>Built across private repos,<br />public builds, and small experiments.</p>
         </section>
 
         <section class="work-section" id="work" aria-labelledby="work-title">
           <div class="section-heading">
             <div>
               <p class="eyebrow">01 / The archive</p>
-              <h2 id="work-title">Selected work</h2>
+              <h2 id="work-title">Full archive</h2>
             </div>
             <p class="section-note">Projects are grouped by the kind of problem they make easier to hold.</p>
           </div>
-          <div class="filter-row" role="group" aria-label="Filter projects">
-            <button class="filter-button is-active" data-filter="all" type="button">All work <span>10</span></button>
-            <button class="filter-button" data-filter="tool" type="button">Tools <span>5</span></button>
-            <button class="filter-button" data-filter="game" type="button">Games <span>2</span></button>
-            <button class="filter-button" data-filter="system" type="button">Systems <span>3</span></button>
+          <div class="archive-controls">
+            <div class="filter-row" role="group" aria-label="Filter projects">
+              <button class="filter-button is-active" data-filter="all" type="button" aria-pressed="true">All work <span data-filter-count>53</span></button>
+              <button class="filter-button" data-filter="tool" type="button" aria-pressed="false">Tools <span data-filter-count>24</span></button>
+              <button class="filter-button" data-filter="game" type="button" aria-pressed="false">Games <span data-filter-count>14</span></button>
+              <button class="filter-button" data-filter="system" type="button" aria-pressed="false">Systems <span data-filter-count>15</span></button>
+            </div>
+            <label class="search-control" for="project-search">
+              <span>Search the archive</span>
+              <input id="project-search" type="search" placeholder="Name, stack, or idea" autocomplete="off" />
+            </label>
           </div>
-          <div class="project-grid" id="project-grid" aria-live="polite"></div>
+          <p class="filter-status" id="filter-status" role="status" aria-live="polite"></p>
+          <div class="project-grid" id="project-grid"></div>
           <p class="no-results" id="no-results" hidden>No projects in this corner of the archive yet.</p>
         </section>
 
@@ -78,7 +93,7 @@
             <p class="eyebrow">02 / The approach</p>
             <h2 id="about-title">The prototype is part of the point.</h2>
             <p>I work across product design, front-end systems, game mechanics, and world-building. The common thread is a bias toward making the idea executable: give it a surface, a rule, a small feedback loop, and see what it teaches us.</p>
-            <p class="about-small">Every card links to the source repository. When there is a public build, it is linked too. The archive is intentionally selective; unfinished things are still allowed to be useful.</p>
+            <p class="about-small">Every card links to its source repository. When there is a public build, it is linked too. The archive is intentionally broad; unfinished things are still allowed to be useful.</p>
             <a class="text-link" href="https://github.com/irgendjemandkeinkorper" target="_blank" rel="noreferrer">See everything on GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </section>

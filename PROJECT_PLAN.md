@@ -6,11 +6,11 @@ This project started without an existing repository brief or frontend codebase i
 
 The primary audience is a potential collaborator, employer, or curious technical person who needs to understand the *use* of a project quickly, then inspect the source or try a public build. The primary journey is:
 
-`land → understand the point of the archive → scan project cards → filter by mode → open repo or live build`
+`land → understand the point of the archive → search or filter project cards → open repo or live build`
 
 ### Definition of done for the MVP
 
-- Ten curated project cards have a clear use case, status, technology cues, and a working repository link.
+- The complete 53-project archive has a card for every authenticated owner repository plus the two local companion projects retained from the original portfolio set, with a clear use case, visibility/status cue, technology cue, and repository link.
 - Public-build links are present only where the project has a known deployed experience.
 - The site works at narrow mobile widths and desktop widths without horizontal scroll.
 - Keyboard users can reach all navigation, filters, and project links with a visible focus state.
